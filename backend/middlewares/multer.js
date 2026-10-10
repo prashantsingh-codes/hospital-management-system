@@ -1,12 +1,22 @@
 import multer from "multer";
 import path from "path";
 import fs from "fs";
+import os from "os";
 
-const uploadDir = "uploads";
+// In serverless environments (like Vercel), the filesystem is read-only (EROFS).
+// Use os.tmpdir() (/tmp on Linux/Vercel) which is writable.
+let uploadDir = "uploads";
 
-//Create the uploads directory if not exist
-if(!fs.existsSync(uploadDir)){
-    fs.mkdirSync(uploadDir);
+try {
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    uploadDir = os.tmpdir();
+  } else {
+    if (!fs.existsSync(uploadDir)) {
+      fs.mkdirSync(uploadDir, { recursive: true });
+    }
+  }
+} catch (err) {
+  uploadDir = os.tmpdir();
 }
 
 //Storage
