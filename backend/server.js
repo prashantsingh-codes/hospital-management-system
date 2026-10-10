@@ -21,15 +21,8 @@ const allowedOrigins = [
 //Middleware
 app.use(cors(
   {
-    origin: function (origin, callback) {
-      if(!origin) return callback(null,true);
-      const normalizedOrigin = origin.replace(/\/+$/, "");
-      if(allowedOrigins.includes(normalizedOrigin)) {
-        return callback(null,true);
-      }
-        return callback(new Error("Not allowed by CORS"))
-    },
-    credentials:true,
+    origin: true,
+    credentials: true,
     methods: ["GET","POST","PUT","DELETE","OPTIONS"],
     allowedHeaders: ["Content-Type","Authorization"]
   }

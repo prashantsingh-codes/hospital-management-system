@@ -3,7 +3,7 @@ import { listPageStyles } from "../assets/dummyStyles";
 import { useParams } from "react-router-dom";
 import { Calendar, Phone, Search } from "lucide-react";
 
-const API_BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+const API_BASE = (import.meta.env.VITE_BACKEND_URL || "http://localhost:4000").replace(/\/+$/, "");
 
 function parseDateTime(date, time) {
   return new Date(`${date}T${time}:00`);

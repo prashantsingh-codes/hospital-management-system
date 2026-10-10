@@ -4,7 +4,7 @@ import { doctorsPageStyles } from "../assets/dummyStyles";
 import { ChevronRight, CircleChevronDown, CircleChevronUp, Medal, MousePointer2Off, Search, X } from "lucide-react";
 
 const DoctorsPage = () => {
-  const API_BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+  const API_BASE = (import.meta.env.VITE_BACKEND_URL || "http://localhost:4000").replace(/\/+$/, "");
   const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
