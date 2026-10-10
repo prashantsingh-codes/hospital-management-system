@@ -1,0 +1,31 @@
+import jwt from "jsonwebtoken";
+import Doctor from "../models/Doctor.js";
+
+const JWT_SECRET = process.env.JWT_SECRET;
+
+const doctorAuth = async (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer")) {
+    return res.status(401).json({ message: "Unauthorized" });
+  }
+  const token = authHeader.split(" ")[1];
+  try {
+    const payload = jwt.verify(token, JWT_SECRET);
+    if (payload.role && payload.role !== "doctor") {
+      return res
+        .status(403)
+        .json({ message: "Forbidden - Doctor role required" });
+    }
+    const doctor = await Doctor.findById(payload.id).select("-password");
+    if (!doctor) {
+      return res.status(401).json({ message: "Doctor not found" });
+    }
+    req.doctor = doctor;
+    next();
+  } catch (error) {
+    console.error("Doctor JWT verification failed", error);
+    return res.status(401).json({ message: "Unauthorized" });
+  }
+};
+
+export default doctorAuth;
