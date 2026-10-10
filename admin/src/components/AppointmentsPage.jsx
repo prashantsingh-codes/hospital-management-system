@@ -6,7 +6,7 @@ import {
 } from "../assets/dummyStyles";
 import { Calendar, Search } from "lucide-react";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 
 //Helper functions
 //to format date to dd-mon-yyyy
