@@ -1,21 +1,23 @@
-﻿<div align="center">
+<div align="center">
 
 # 🏥 MediCare — Hospital Management System
 
 **A full-stack, production-grade healthcare platform** with real-time appointment booking, online payments, dual-panel administration, and role-based doctor portals.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Frontend-10b981?style=for-the-badge)](https://your-frontend-url.vercel.app)
-[![Admin Panel](https://img.shields.io/badge/🛡️_Admin-Panel-064e3b?style=for-the-badge)](https://your-admin-url.vercel.app)
-[![Backend API](https://img.shields.io/badge/⚙️_REST-API-0f766e?style=for-the-badge)](https://your-backend-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Patient%20Portal-FF6B6B?style=for-the-badge&logoColor=white)](https://hospital-management-system-cgus.vercel.app/)
+[![Admin Panel](https://img.shields.io/badge/🛡️%20Admin-Control%20Panel-845EF7?style=for-the-badge&logoColor=white)](https://hospital-management-system-five-beryl.vercel.app/)
+[![Backend API](https://img.shields.io/badge/⚙️%20Backend-REST%20API-F59E0B?style=for-the-badge&logoColor=white)](https://vercel.com/prashantsinghcodes-3620s-projects/hospital-management-system-backend)
 
-![Tech Stack](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express_5-000000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
-![Clerk](https://img.shields.io/badge/Clerk_Auth-6C47FF?style=flat-square&logo=clerk&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![React 19](https://img.shields.io/badge/React_19-20D9D2?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-6DB33F?style=flat-square&logo=node.js&logoColor=white)
+![Express 5](https://img.shields.io/badge/Express_5-F8F8F8?style=flat-square&logo=express&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-00ED64?style=flat-square&logo=mongodb&logoColor=black)
+![Stripe](https://img.shields.io/badge/Stripe-7C3AED?style=flat-square&logo=stripe&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk_Auth-F59E0B?style=flat-square&logo=clerk&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3B82F6?style=flat-square&logo=cloudinary&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-FF4785?style=flat-square&logo=vercel&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_8-BD34FE?style=flat-square&logo=vite&logoColor=white)
 
 </div>
 
